@@ -62,59 +62,21 @@ The metric used to compare performance was the Area Under the Curve for the Reic
 
 ### 3. Results
 
-[pdp_30]: 
-https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/30%20days%20pdp.png?raw=true
-
-[pdp_90]: 
-https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/90%20days%20pdp.png?raw=true
-
-
-[profit_30]: https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/30%20days%20profit.png?raw=true
-
-[profit_90]: https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/90%20days%20profit.png?raw=true
-
-[roc_30]: https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/30%20days%20roc.png?raw=true
-
-[roc_90]: https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/90%20days%20roc.png?raw=true
-
 #### ROC curves (Test data)
-
+* The ROC curves show the tradeoff between TPR (users predicted to churn who actually churn) and FPR (users predicted to churn who do not churn).
 <img align="left" width="400" height="300" src="https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/30%20days%20roc.png?raw=true">
-
 <img align="right" width="400" height="300" src="https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/90%20days%20roc.png?raw=true">
 
 
-<p align="center">
+#### Partial Dependency Plots
+* PDPs show the relationship between a given feature and the outcome (probability of churn), keeping all else equal. These plots are fitted to the best performing models (Gradient Boosting).
+##### Churn = No use in 30 days
 <img align="center" width="700" height="500" src="https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/30%20days%20pdp.png?raw=true">
 
-
-   ***
-
-<p align="center">
-   
+##### Churn = No use in 90 days
 <img align="center" width="700" height="500" src="https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/90%20days%20pdp.png?raw=true">
 
-
-
+#### Profit Curves
 <img align="left" width="400" height="300" src="https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/30%20days%20profit.png?raw=true">
 
 <img align="right" width="400" height="300" src="https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/90%20days%20profit.png?raw=true">
-
-<!-- ![ROC Plot][roc_30]
-
-* 90 days
-![ROC Plot][roc_90] -->
-
-<!-- * 30 days
-![Partial Dependence Plot][pdp_30]
-
-* 90 days
-![Partial Dependence Plot][pdp_90] -->
-
-<!-- * Profit curves
-    
-    * 30 days
-![Profit Curve][profit_30]
-    
-    * 90 days
-![Profit Curve][profit_90] -->
