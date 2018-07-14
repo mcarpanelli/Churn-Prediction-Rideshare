@@ -64,8 +64,8 @@ The metric used to compare performance was the Area Under the Curve for the Reic
 
 #### ROC curves (Test data)
 * The ROC curves show the tradeoff between TPR (users predicted to churn who actually churn) and FPR (users predicted to churn who do not churn).
-<img align="left" width="400" height="300" src="https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/30%20days%20roc.png?raw=true">
-<img align="right" width="400" height="300" src="https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/90%20days%20roc.png?raw=true">
+<img align="left" width="420" height="310" src="https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/30%20days%20roc.png?raw=true">
+<img align="right" width="420" height="310" src="https://github.com/liyouzhang/Churn_Prediction/blob/working/pictures/90%20days%20roc.png?raw=true">
 
 
 #### Partial Dependency Plots
