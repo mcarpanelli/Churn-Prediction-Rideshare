@@ -1,5 +1,5 @@
 import pandas as pd
-
+import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 from sklearn.metrics import roc_curve, auc, confusion_matrix
@@ -13,7 +13,7 @@ from feature_engineering import build_X, build_y
 from models import logisticModel, randomForestModel, GradientBoost, adaBoost, GBC_Logistic, RF_Logistic
 from costbenefit_analysis import standard_confusion_matrix, profit_curve, plot_model_profits
 
-def get_data(n_days = '30 days'):
+def get_data(n_days):
     y = build_y(churnTrainDF, delta_days=n_days)
     X = build_X(churnTrainDF, delta_days=n_days)
     y_test = build_y(churnTestDF, delta_days=n_days)
@@ -78,7 +78,7 @@ if __name__ == '__main__':
         "city_King's Landing", 'city_Winterfell', 'phone_iPhone',
         'luxury_car_user_True', 'user_lifespan', 'user_rated_driver',
         'user_rated_driver_avg_rating_of_driver', 'city_Astapor', 'phone_Android',
-            'luxury_car_user_False', 'avg_dist', 'avg_rating_by_driver', 'avg_rating_of_driver']
+        'luxury_car_user_False', 'avg_dist', 'avg_rating_by_driver', 'avg_rating_of_driver']
 
         features = [5,9,15,3,4,6,7,8,14,16,10,11,17,18,19]
 
